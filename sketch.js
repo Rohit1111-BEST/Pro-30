@@ -13,7 +13,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-
+ 
   box8 = new Box(330,235,30,40)
   box9 = new Box(360,235,30,40)
   box10 = new Box(390,235,30,40)
@@ -36,7 +36,7 @@ function setup() {
 
 function draw() {
   background(200,200,200);  
-  engine.update(engine);
+  Engine.update(engine);
 
   box8.display();
   box9.display();
@@ -53,7 +53,7 @@ function draw() {
   paper.display();
   launcher.display();
 
-
+  
   ground.display();
 }
 
